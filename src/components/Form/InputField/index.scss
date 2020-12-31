@@ -1,0 +1,21 @@
+@import '../../../styles/variables.scss';
+.form-field{
+  position: relative;
+
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+.form-field--error-text{
+	color: $kant-error;
+	font-size: 12px;
+  line-height: 20px;
+  padding: 8px 0 10px;
+}
+.form-field__placeholder{
+	font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0e0e0f;
+  margin: 0 0 8px;
+}

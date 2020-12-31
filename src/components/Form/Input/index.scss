@@ -1,0 +1,20 @@
+@import '../../../styles/variables';
+
+.form-input{
+  width: 100%;
+  height: 42px;
+  background: $kant-light-grey;
+  color: $kant-black;
+  font-size: 16px;
+  background: $kant-white;
+  padding: 0 20px;
+  border: 1px solid $kant-border-input;
+  border-radius: 4px;
+  transition: 300ms ease-out;
+  &:focus {
+    border-color: $kant-blue;
+  }
+}
+.form-input--error{
+  border-color: $kant-error;
+}

@@ -1,0 +1,113 @@
+@import '../../styles/_variables.scss';
+
+.kant-button{
+	position: relative;
+	height: 46px;
+	width: 100px;
+  cursor: pointer;
+  color: $kant-grey;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0 32px;
+  background: $kant-blue;
+  border-radius: 4px;
+  transition: 300ms ease-out;
+}
+.kant-button__title{
+	position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.kant-button__loader{
+	  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 8;
+}
+.kant-button__loader-back{
+	position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
+  z-index: 7;
+}
+.kant-button__loader-dot{
+	  width: 6px;
+  height: 6px;
+  background-color: #efefef;
+  border-radius: 50%;
+  float: left;
+  margin: 0 5px;
+  transform: scale(0.5) translate(0);
+  opacity: 0.7;
+  animation: 2s ease infinite fadeInRTL1;
+
+  & + & {
+    animation-name: fadeInRTL2;
+  }
+
+  & + & + & {
+    animation-name: fadeInRTL3;
+  }
+}
+
+@keyframes fadeInRTL1 {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  30% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+};
+
+@keyframes fadeInRTL2{
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  40% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+};
+
+@keyframes fadeInRTL3 {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+};

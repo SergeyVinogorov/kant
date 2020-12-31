@@ -1,0 +1,19 @@
+@import '../../styles/_variables.scss';
+
+.kant-form{
+	 position: relative;
+	 display: flex;
+	 flex-direction: column;
+}
+.kant-form__error{
+	padding: 10px;
+  color: $kant-error;
+  background: $kant-error-light;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+.kant-form__submit{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}

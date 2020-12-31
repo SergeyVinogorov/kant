@@ -1,0 +1,21 @@
+@import '../../styles/_variables.scss';
+
+.kant-main{
+	padding: 25px;
+	max-width: 480px;
+	margin: 0 auto;
+	position: relative;
+}
+.kant-record__title{
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+.kant-main__error{
+	padding: 10px;
+  color: $kant-error;
+  background: $kant-error-light;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}

@@ -1,5 +1,5 @@
 export const API_URL = 
-'/kant_school_test_ws/hs/lkKantSport/v1/CoachSchedule'
+'https://1c1.kant.ru/kant_school_test_ws/hs/lkKantSport/v1/CoachSchedule'
 // 'https://trener.kant.ru/api'
 // 'https://1c1.kant.ru/kant_school_ws/hs/lkKantSport/v1/CoachSchedule'
 // '/kant_school_ws/hs/lkKantSport/v1/CoachSchedule'
